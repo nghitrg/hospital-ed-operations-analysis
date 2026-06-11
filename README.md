@@ -109,3 +109,45 @@ Key Variables:
 
 - Long waiting cases are relatively evenly distributed across departments.
 - No department shows an exceptionally high long-wait rate.
+
+## Recommendations
+
+### Resource Planning
+
+- Adjust staffing and resource allocation according to seasonal demand.
+- Increase operational capacity during peak periods, particularly from April to October.
+
+### Department Monitoring
+
+- Closely monitor high-volume departments such as General Practice and Orthopedics.
+- Track waiting time performance regularly to prevent potential bottlenecks.
+
+### Process Improvement
+
+- Review departments with relatively higher waiting times, including Neurology and Physiotherapy.
+- Identify operational steps that may contribute to longer waiting times.
+
+### Data Collection
+
+To better understand the drivers of waiting time, hospitals should collect additional operational data:
+
+- Patient acuity level
+- Staffing level
+- Queue length
+- Treatment duration
+
+## Repository Structure
+
+```text
+hospital-ed-operations-analysis/
+│
+├── SQL/
+│   ├── data_cleaning.sql
+│   ├── kpi_analysis.sql
+│   └── operational_analysis.sql
+│
+├── Python/
+│   └── hospital_ed_analysis.ipynb
+│
+└── README.md
+```
