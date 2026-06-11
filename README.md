@@ -4,7 +4,11 @@
 
 This project analyzes Emergency Department (ED) operations using patient flow data to identify workload patterns, waiting time trends, and potential operational bottlenecks.
 
+The analysis focuses on key operational metrics including patient volume, waiting time, admission rate, and patient satisfaction.
+
 The objective is to support data-driven decisions that improve patient experience and operational efficiency.
+
+---
 
 ## Business Problem
 
@@ -15,6 +19,8 @@ Hospitals often face several operational challenges:
 - Inefficient resource allocation
 - Potential operational bottlenecks
 
+---
+
 ## Business Objectives
 
 The analysis aims to:
@@ -24,18 +30,20 @@ The analysis aims to:
 - Optimize patient flow
 - Improve operational efficiency
 
+---
+
 ## Dataset
 
-Source:
+### Source
 
 - Kaggle Healthcare Analytics Patient Flow Dataset
 
-Dataset Size:
+### Dataset Size
 
 - 9,216 patient visits
 - Period: September 2023 – December 2024
 
-Key Variables:
+### Key Variables
 
 - Patient wait time
 - Department referral
@@ -43,16 +51,16 @@ Key Variables:
 - Patient satisfaction score
 - Demographic information
 
+---
+
 ## Tools
 
 - SQL (BigQuery)
-- Python
-  - Pandas
-  - NumPy
-  - Matplotlib
-  - Seaborn
+- Python (Pandas, NumPy, Matplotlib, Seaborn)
 - Jupyter Notebook
 - GitHub
+
+---
 
 ## Analysis Process
 
@@ -63,7 +71,7 @@ Key Variables:
 - Data consistency validation
 - Feature engineering
 
-### 2. Statistical Overview
+### 2. Exploratory Data Analysis
 
 - Descriptive statistics
 - Distribution analysis
@@ -88,6 +96,8 @@ Key Variables:
 - Department monitoring
 - Operational improvement opportunities
 
+---
+
 ## Key Findings
 
 ### Seasonal Workload Pattern
@@ -95,20 +105,22 @@ Key Variables:
 - Patient volume increases significantly from April to October.
 - August records the highest workload.
 
-### Department Workload
+### Department Performance
 
 - General Practice and Orthopedics handle the highest number of patients.
-- Workload distribution varies considerably across departments.
+- Neurology records relatively higher waiting times despite lower patient volume.
 
 ### Waiting Time Performance
 
 - Average waiting time remains relatively stable despite seasonal workload increases.
-- No clear system-wide congestion was identified.
+- No clear evidence of system-wide congestion was identified based on the available data.
 
 ### Long Waiting Cases
 
 - Long waiting cases are relatively evenly distributed across departments.
 - No department shows an exceptionally high long-wait rate.
+
+---
 
 ## Recommendations
 
@@ -135,6 +147,8 @@ To better understand the drivers of waiting time, hospitals should collect addit
 - Staffing level
 - Queue length
 - Treatment duration
+
+---
 
 ## Repository Structure
 
