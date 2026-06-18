@@ -22,4 +22,4 @@ SELECT
 FROM tdvnghi-00.dataset.hospital_operation_clean 
 )
 SELECT ROUND(SUM(admission)*100.0/COUNT(*),2) AS admission_rate
-FROM admission_table ;
+FROM admission_table;
