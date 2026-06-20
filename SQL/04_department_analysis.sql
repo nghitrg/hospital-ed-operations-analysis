@@ -1,27 +1,29 @@
--- 9. Thời gian chờ theo khoa
+-- Department Analysis
+
+-- 9. Average waiting time by department
 
 SELECT
     department_referral,
     COUNT(*) AS total_patients,
-    ROUND(AVG(patient_waittime), 2) AS avg_waittime
+    ROUND(AVG(patient_waittime), 2) AS avg_wait_time
 FROM `tdvnghi-00.dataset.hospital_operation_clean`
 WHERE
     department_referral IS NOT NULL
     AND department_referral != 'None'
     AND patient_waittime IS NOT NULL
 GROUP BY department_referral
-ORDER BY avg_waittime DESC;
+ORDER BY avg_wait_time DESC;
 
--- Nhận xét:
--- Thời gian chờ trung bình giữa các khoa tương đối đồng đều (~34–36 phút).
--- General Practice và Orthopedics có lượng bệnh nhân cao nhưng vẫn duy trì thời gian chờ tương đương các khoa khác.
--- Chưa ghi nhận mối quan hệ rõ ràng giữa số lượng bệnh nhân và thời gian chờ trung bình.
+-- Findings:
+-- Average waiting times were relatively consistent across departments (~34–36 minutes).
+-- General Practice and Orthopedics handled a high patient volume while maintaining waiting times comparable to other departments.
+-- No clear relationship was observed between patient volume and average waiting time.
 
--- 10. Mối quan hệ giữa mức độ hài lòng và thời gian chờ
+-- 10. The relationship between patient satisfaction and waiting time
 
 SELECT
     patient_satisfaction_score AS satisfaction_score,
-    ROUND(AVG(patient_waittime), 2) AS avg_waittime,
+    ROUND(AVG(patient_waittime), 2) AS avg_wait_time,
     COUNT(*) AS total_patients
 FROM `tdvnghi-00.dataset.hospital_operation_clean`
 WHERE
@@ -30,5 +32,5 @@ WHERE
 GROUP BY satisfaction_score
 ORDER BY satisfaction_score;
 
--- Nhận xét:
--- Chưa ghi nhận mối quan hệ rõ ràng giữa thời gian chờ và mức độ hài lòng của bệnh nhân.
+-- Findings:
+-- No clear relationship was observed between patient satisfaction scores and average waiting time.
