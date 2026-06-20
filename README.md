@@ -1,16 +1,24 @@
 # Hospital Emergency Department Operations Analysis
 
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-336791?style=flat-square&logo=postgresql&logoColor=white)
+![Healthcare](https://img.shields.io/badge/Domain-Healthcare-success?style=flat-square)
+![EDA](https://img.shields.io/badge/Analysis-EDA-blue?style=flat-square)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
+
+---
+
 ## Project Overview
 
-This project analyzes Emergency Department (ED) operations using patient flow data to explore patient volume, waiting time, department workload, admission patterns, and waiting time performance.
+This project analyzes Emergency Department (ED) operations using patient flow data to evaluate patient demand, waiting time, department workload, and admission patterns.
 
-Using SQL and Python, the project identifies operational trends and provides business insights to support data-driven decision making for healthcare operations.
+Using SQL and Python, the project uncovers operational trends and provides data-driven insights to support healthcare resource planning and operational decision-making.
 
 ---
 
 ## Business Problem
 
-Emergency Departments often experience operational challenges such as:
+Emergency Departments often face operational challenges such as:
 
 - Long patient waiting times
 - Low patient satisfaction
@@ -32,129 +40,95 @@ This project aims to:
 
 ## Dataset
 
-### Source
+**Source:** Healthcare Analytics Patient Flow Dataset (Kaggle)
 
-Healthcare Analytics Patient Flow Dataset (Kaggle)
+**Dataset Summary**
 
-### Dataset Information
-
-- 9,216 patient visits
-- Period: September 2023 – December 2024
-
-### Key Variables
-
-- Patient admission date and time
-- Patient wait time
-- Department referral
-- Admission status
-- Patient satisfaction score
-- Patient demographics
+- **Records:** 9,216 Emergency Department visits
+- **Period:** September 2023 – December 2024
 
 ---
 
 ## Tools
 
 - SQL (BigQuery)
-- Python
-  - Pandas
-  - NumPy
-  - Matplotlib
-  - Seaborn
+- Python (Pandas, NumPy, Matplotlib, Seaborn)
 - Jupyter Notebook
 - GitHub
 
-## Project Workflow
+---
 
-1. Collect the dataset from Kaggle
-2. Clean and prepare the data using SQL (BigQuery)
-3. Perform exploratory and operational analysis using Python
-4. Generate business insights
-5. Provide operational recommendations
+## Methodology
+
+1. Data Collection
+2. Data Cleaning and Preparation
+3. Exploratory Data Analysis
+4. Operational Analysis
+5. Business Insights
+6. Business Recommendations
 
 ---
 
-## Analysis Process
+## Key Visualizations
 
-### 1. Data Preparation
+## Emergency Department Patient Volume by Month
 
-- Data cleaning
-- Data type standardization
-- Missing value assessment
-- Feature engineering
+![Emergency Department Patient Volume by Month](images/patient_volume_by_month.png)
 
-### 2. Exploratory Data Analysis
+**Insight**
 
-- Descriptive statistics
-- Distribution analysis
-- Data quality assessment
+Patient demand increased substantially from **April to October**, with **August** recording the highest patient volume. This indicates a clear seasonal workload pattern in the Emergency Department.
 
-### 3. Operational Analysis
+---
 
-- Patient volume analysis
-- Admission pattern analysis
-- Department workload analysis
-- Waiting time analysis
+## Workload and Waiting Time by Month
 
-### 4. Waiting Time Analysis
+![Workload and Waiting Time by Month](images/workload_waittime_by_month.png)
 
-- Waiting time by department
-- Long waiting case analysis
-- Workload vs. waiting time
-- Seasonal workload analysis
+**Insight**
 
-### 5. Business Recommendations
+Despite increased patient volume during peak months, average waiting time remained relatively stable. This suggests that seasonal demand alone was not the primary driver of prolonged waiting times.
 
-- Operational improvement opportunities
-- Resource planning recommendations
+---
+
+## Department Workload Analysis
+
+![Department Workload Analysis](images/patient_volume_vs_waittime_by_dep.png)
+
+**Insight**
+
+General Practice and Orthopedics handled the highest patient volumes, while Neurology experienced relatively longer average waiting times despite serving fewer patients.
+
+---
+
+## Long Waiting Time Analysis
+
+![Long Waiting Time Analysis](images/comparison_long_wait_by_dep.png)
+
+**Insight**
+
+Departments with more long waiting cases generally also handled more patients. No department demonstrated an exceptionally high long waiting rate compared with others.
 
 ---
 
 ## Key Findings
 
-### Patient Volume
-
-- Patient volume increases from April to October, with the highest workload observed in August.
-- Emergency Department demand remains relatively stable throughout the day without significant congestion periods.
-
-### Department Performance
-
-- General Practice and Orthopedics receive the largest number of patient referrals.
-- Neurology shows relatively higher average waiting times despite lower patient volume.
-
-### Waiting Time
-
-- Average waiting time remains relatively stable across departments.
+- Emergency Department demand shows a clear seasonal pattern from April to October.
+- Patient volume remains relatively stable throughout the day without distinct congestion periods.
+- General Practice and Orthopedics receive the highest patient volume.
+- Neurology experiences relatively longer waiting times despite lower workload.
 - No strong relationship is observed between department workload and average waiting time.
+- Longer waiting times are likely influenced by operational factors beyond patient volume.
 
 ---
 
-## Recommendations
+## Business Recommendations
 
-### Resource Planning
+- Adjust staffing based on seasonal patient demand.
+- Closely monitor high-volume departments.
+- Review departments with relatively longer waiting times.
+- Collect additional operational data, such as patient acuity, staffing levels, queue length, and treatment duration, to better understand waiting time drivers.
 
-- Allocate staffing based on seasonal patient demand.
-- Increase operational capacity during peak months.
-
-### Department Monitoring
-
-- Monitor high-volume departments regularly.
-- Track waiting time trends to identify emerging bottlenecks.
-
-### Process Improvement
-
-- Review workflows in departments with relatively longer waiting times.
-- Investigate operational factors beyond patient volume.
-
-### Future Improvements
-
-The current dataset provides limited operational variables. Future analysis could be enhanced by incorporating:
-
-- Patient acuity level
-- Staffing level
-- Queue length
-- Treatment duration
-
-These variables would enable a deeper investigation of waiting time drivers and operational bottlenecks.
 ---
 
 ## Repository Structure
@@ -175,8 +149,19 @@ hospital-ed-operations-analysis/
 ├── Python/
 │   └── hospital_emergency_department_analysis.ipynb
 │
+├── images/
+│   ├── patient_volume_by_month.png
+│   ├── workload_waittime_by_month.png
+│   ├── patient_volume_vs_waittime_by_dep.png
+│   └── comparison_long_wait_by_dep.png
+│
+├── LICENSE
+├── .gitignore
 └── README.md
 ```
+
+---
+
 ## Author
 
 **Truong Do Vinh Nghi**
