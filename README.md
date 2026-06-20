@@ -2,8 +2,7 @@
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-336791?style=flat-square&logo=postgresql&logoColor=white)
-![Healthcare](https://img.shields.io/badge/Domain-Healthcare-success?style=flat-square)
-![EDA](https://img.shields.io/badge/Analysis-EDA-blue?style=flat-square)
+![Healthcare](https://img.shields.io/badge/Healthcare-success?style=flat-square)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
 
 ---
@@ -71,41 +70,49 @@ This project aims to:
 
 ## Key Visualizations
 
-## Emergency Department Patient Volume by Month
+### Emergency Department Patient Volume by Month
 
-![Emergency Department Patient Volume by Month](images/patient_volume_by_month.png)
+<p align="center">
+  <img src="images/patient_volume_by_month.png" width="800">
+</p>
 
-**Insight**
+**Key Insight**
 
 Patient demand increased substantially from **April to October**, with **August** recording the highest patient volume. This indicates a clear seasonal workload pattern in the Emergency Department.
 
 ---
 
-## Workload and Waiting Time by Month
+### Workload and Waiting Time by Month
 
-![Workload and Waiting Time by Month](images/workload_waittime_by_month.png)
+<p align="center">
+  <img src="images/workload_waittime_by_month.png" width="800">
+</p>
 
-**Insight**
+**Key Insight**
 
 Despite increased patient volume during peak months, average waiting time remained relatively stable. This suggests that seasonal demand alone was not the primary driver of prolonged waiting times.
 
 ---
 
-## Department Workload Analysis
+### Department Workload Analysis
 
-![Department Workload Analysis](images/patient_volume_vs_waittime_by_dep.png)
+<p align="center">
+  <img src="images/patient_volume_vs_waittime_by_dep.png" width="800">
+</p>
 
-**Insight**
+**Key Insight**
 
 General Practice and Orthopedics handled the highest patient volumes, while Neurology experienced relatively longer average waiting times despite serving fewer patients.
 
 ---
 
-## Long Waiting Time Analysis
+### Long Waiting Time Analysis
 
-![Long Waiting Time Analysis](images/comparison_long_wait_by_dep.png)
+<p align="center">
+  <img src="images/comparison_long_wait_by_dep.png" width="800">
+</p>
 
-**Insight**
+**Key Insight**
 
 Departments with more long waiting cases generally also handled more patients. No department demonstrated an exceptionally high long waiting rate compared with others.
 
@@ -168,5 +175,6 @@ hospital-ed-operations-analysis/
 
 Aspiring Data Analyst
 
-- GitHub: https://github.com/nghitrg
-- LinkedIn: *(coming soon)*
+📌 GitHub: https://github.com/nghitrg
+
+📌 LinkedIn: *(Coming Soon)*
