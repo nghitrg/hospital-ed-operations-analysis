@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project analyzes Emergency Department (ED) operations using patient flow data to explore patient volume, waiting time, department workload, admission patterns, and patient satisfaction.
+This project analyzes Emergency Department (ED) operations using patient flow data to explore patient volume, waiting time, department workload, admission patterns, and waiting time performance.
 
 Using SQL and Python, the project identifies operational trends and provides business insights to support data-driven decision making for healthcare operations.
 
@@ -63,6 +63,14 @@ Healthcare Analytics Patient Flow Dataset (Kaggle)
 - Jupyter Notebook
 - GitHub
 
+## Project Workflow
+
+1. Collect the dataset from Kaggle
+2. Clean and prepare the data using SQL (BigQuery)
+3. Perform exploratory and operational analysis using Python
+4. Generate business insights
+5. Provide operational recommendations
+
 ---
 
 ## Analysis Process
@@ -99,11 +107,6 @@ Healthcare Analytics Patient Flow Dataset (Kaggle)
 - Operational improvement opportunities
 - Resource planning recommendations
 
-### 5. Business Recommendations
-
-- Operational improvement opportunities
-- Resource planning recommendations
-
 ---
 
 ## Key Findings
@@ -122,11 +125,6 @@ Healthcare Analytics Patient Flow Dataset (Kaggle)
 
 - Average waiting time remains relatively stable across departments.
 - No strong relationship is observed between department workload and average waiting time.
-
-### Patient Satisfaction
-
-- Waiting time alone does not fully explain patient satisfaction.
-- Additional operational factors are likely to influence patient experience.
 
 ---
 
@@ -169,15 +167,21 @@ hospital-ed-operations-analysis/
 │   └── hospital_operation_clean.csv
 │
 ├── SQL/
-│   ├── README.md
 │   ├── 01_data_preparation.sql
 │   ├── 02_kpi_analysis.sql
 │   ├── 03_operational_analysis.sql
 │   └── 04_department_analysis.sql
 │
 ├── Python/
-│   ├── README.md
 │   └── hospital_emergency_department_analysis.ipynb
 │
 └── README.md
 ```
+## Author
+
+**Truong Do Vinh Nghi**
+
+Aspiring Data Analyst
+
+- GitHub: https://github.com/nghitrg
+- LinkedIn: *(coming soon)*
